@@ -79,18 +79,4 @@ class BuildDocs(Command):
                      docs, os.path.join(docs, '_build')])
 
 
-setup(
-    name=NAME,
-    version=VERSION,
-    author=AUTHOR,
-    packages=PACKAGES,
-    include_package_data=True,
-    install_requires=INSTALL_DEPENDENCIES,
-    setup_requires=SETUP_DEPENDENCIES,
-    tests_require=TEST_DEPENDENCIES,
-    extras_require=EXTRA_DEPENDENCIES,
-    cmdclass={
-        'test': PyTest,
-        'doc': BuildDocs
-    }
-)
+
