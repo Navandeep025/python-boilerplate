@@ -4,7 +4,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 
 chrome_options = Options()
-options.binary_location = "/usr/bin/google-chrome-stable"
+chrome_options.setBinary("/usr/bin/google-chrome-stable")
+#options.binary_location = "/usr/bin/google-chrome-stable"
 chrome_options.add_argument("--headless")
 driver = webdriver.Chrome(executable_path=r"chromedriver",   chrome_options=chrome_options)
 driver.get("http://www.python.org")
