@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 #chrome_options.setBinary("/usr/bin/google-chrome-stable")
 #chrome_options.binary_location = "/usr/bin/google-chrome-stable"
 #chrome_options.add_argument("--headless")
-driver = webdriver.Chrome("chromedriver.exe")
+driver = webdriver.Chrome(r"/var/jenkins_home/workspace/python1/chromedriver.exe")
 driver.get("http://www.python.org")
 assert "Python" in driver.title
 elem = driver.find_element_by_name("q")
