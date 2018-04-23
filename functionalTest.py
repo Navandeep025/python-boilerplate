@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 #chrome_options =Options()       chrome_options=chrome_options
 #chrome_options.setBinary("/usr/bin/google-chrome-stable")
 #chrome_options.binary_location = "/usr/bin/google-chrome-stable"
-chrome_options.add_argument("--headless")
+#chrome_options.add_argument("--headless")
 driver = webdriver.Chrome("chromedriver.exe")
 driver.get("http://www.python.org")
 assert "Python" in driver.title
