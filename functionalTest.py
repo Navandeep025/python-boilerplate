@@ -7,13 +7,13 @@ from selenium.webdriver.chrome.options import Options
 #chrome_options.setBinary("/usr/bin/google-chrome-stable")
 #chrome_options.binary_location = "/usr/bin/google-chrome-stable"
 #chrome_options.add_argument("--headless")
-driver = webdriver.Chrome(executable_path=r"/var/jenkins_home/workspace/python1/chromedriver.exe")
+driver = webdriver.Chrome(executable_path=r"chromedriver.exe")
 driver.get("http://www.python.org")
-assert "Python" in driver.title
-elem = driver.find_element_by_name("q")
-elem.clear()
+# assert "Python" in driver.title
+# elem = driver.find_element_by_name("q")
+# elem.clear()
 
-elem.send_keys("pycon")
-elem.send_keys(Keys.RETURN)
-assert "No results found." not in driver.page_source
+# elem.send_keys("pycon")
+# elem.send_keys(Keys.RETURN)
+# assert "No results found." not in driver.page_source
 driver.close()
