@@ -3,11 +3,11 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 
-chrome_options =Options()
+#chrome_options =Options()       chrome_options=chrome_options
 #chrome_options.setBinary("/usr/bin/google-chrome-stable")
-chrome_options.binary_location = "/usr/bin/google-chrome-stable"
+#chrome_options.binary_location = "/usr/bin/google-chrome-stable"
 chrome_options.add_argument("--headless")
-driver = webdriver.Chrome(executable_path= "chromedriver.exe",   chrome_options=chrome_options)
+driver = webdriver.Chrome("chromedriver.exe")
 driver.get("http://www.python.org")
 assert "Python" in driver.title
 elem = driver.find_element_by_name("q")
