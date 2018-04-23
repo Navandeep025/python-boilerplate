@@ -4,6 +4,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options  
 
 chrome_options = Options()
+chrome_options.add_argument("--headless") 
 driver = webdriver.Chrome(executable_path='/usr/local/share/chromedriver.exe',   chrome_options=chrome_options)
 driver.get("http://www.python.org")
 assert "Python" in driver.title
