@@ -13,6 +13,7 @@ driver = webdriver.Chrome("//usr//local//share//chromedriver.exe")
 driver.set_page_load_timeout(30)
 driver.get("http://www.python.org")
 driver.implicitly_wait(20)
+diver.get_screenshot_as_file("screenshot.png")
 # assert "Python" in driver.title
 # elem = driver.find_element_by_name("q")
 # elem.clear()
