@@ -12,7 +12,7 @@ options = webdriver.ChromeOptions()
 options.binary_location = "//usr//bin//google-chrome-stable"
 options.add_argument("--headless")
 #executable_path=r"chromedriver.exe"
-driver = webdriver.Chrome("//usr//local//share//chromedriver.exe")
+driver = webdriver.Chrome(executable_path="//usr//local//share//chromedriver.exe")
 driver.set_page_load_timeout(30)
 driver.get("http://www.python.org")
 driver.implicitly_wait(20)
