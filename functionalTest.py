@@ -10,6 +10,7 @@ chrome_options =Options()
 chrome_options.add_argument("--headless")
 #executable_path=r"chromedriver.exe"
 driver = webdriver.Chrome("//usr//local//share//chromedriver.exe")
+driver.set_page_load_timeout(30)
 driver.get("http://www.python.org")
 # assert "Python" in driver.title
 # elem = driver.find_element_by_name("q")
