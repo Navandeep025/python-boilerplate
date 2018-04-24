@@ -9,7 +9,7 @@ chrome_options =Options()
 #chrome_options.binary_location = "/usr/bin/google-chrome-stable"
 chrome_options.add_argument("--headless")
 #executable_path=r"chromedriver.exe"
-driver = webdriver.Chrome()
+driver = webdriver.Chrome("//usr//local//share//chromedriver.exe")
 driver.get("http://www.python.org")
 # assert "Python" in driver.title
 # elem = driver.find_element_by_name("q")
