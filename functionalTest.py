@@ -9,7 +9,7 @@ chrome_options =Options()
 options = webdriver.ChromeOptions()
 #chrome_options=chrome_options
 #chrome_options.setBinary("/usr/bin/google-chrome-stable")
-options.binary_location = "/usr/bin/google-chrome-stable"
+options.binary_location = "//usr//bin//google-chrome-stable"
 chrome_options.add_argument("--headless")
 #executable_path=r"chromedriver.exe"
 driver = webdriver.Chrome("//usr//local//share//chromedriver.exe")
